@@ -1,20 +1,9 @@
 (function main(){
-
     typeCheckExample();
-
 })();
 
-function checkValueType(valueList){
-    let ix, ixLen;
-    let value;
-    for(ix = 0 , ixLen = valueList.length; ix < ixLen ; ix++){
-        value = valueList[ix];
-        console.log(value, 'type : ', typeof value);            
-    }
-}
-
 function typeCheckExample(){
-    // Number check
+    // Number Check
     var numberList = [
         1,
         1.0,
@@ -52,7 +41,15 @@ function typeCheckExample(){
     checkValueType(exceptList);    
 }
 
+function checkValueType(valueList){
+    let ix, ixLen;
+    let value;
+    for(ix = 0 , ixLen = valueList.length; ix < ixLen ; ix++){
+        value = valueList[ix];
+        console.log(value, 'type : ', typeof value);            
+    }
+}
 
 function revealCompare(){
-    
+
 }
