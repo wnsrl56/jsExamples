@@ -2,10 +2,8 @@ echo "Git add all and Show status"
 git add *
 git status
 stat=`git status`
-if [[ $stat == *"nothing to commit, working tree clean"* ]];
+if [[ $stat != *"nothing to commit, working tree clean"* ]];
 then
-    echo "nothing to commit, working tree clean"
-else
     read -p "Press enter to continue a commit......"
         echo -e "Select Git Comment Type\n1.long type 2.short type (default : 1)"
         read -p ">" type
