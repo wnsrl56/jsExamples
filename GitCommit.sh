@@ -20,5 +20,3 @@ then
 fi
 read -p "Press enter to exit" out
 exit $out
-
-
