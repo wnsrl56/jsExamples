@@ -1,6 +1,7 @@
 echo "Git add all and Show status"
 git add *
-git status
+STR=`git status`
+echo "$STR"
 read -p "Press enter to continue a commit......"
 echo -e "Select Git Comment Type\n1.long type 2.short type (default : 1)"
 read -p ">" type
