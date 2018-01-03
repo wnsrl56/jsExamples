@@ -50,6 +50,5 @@ function checkValueType(valueList){
     }
 }
 
-function revealCompare(){
-
+function revealCompare(){    
 }

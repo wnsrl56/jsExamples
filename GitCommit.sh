@@ -23,7 +23,3 @@ then
 fi
 read -p "Press enter to exit" out
 exit $out
-
-echo "auto git pull & git push"
-read -p "Press enter to continue......"
-git pull && { git push } || { echo "pull failed..." & exit 1 }
