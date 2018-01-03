@@ -19,7 +19,7 @@ then
            git commit
         fi
         echo "finished......"
-        git log -5 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        git log -5 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s C(bold blue)<%an>%Creset' --abbrev-commit
 fi
 read -p "Press enter to exit" out
 exit $out
