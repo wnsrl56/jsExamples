@@ -1,4 +1,4 @@
-echo "git add all and show status"
+echo "Git add all and Show status"
 git add *
 git status
 read -p "Press enter to continue a commit......" 
