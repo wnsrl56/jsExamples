@@ -1,14 +1,23 @@
 //main
 
 (function run(){
-    comparePseudoArray();
-    createArray();
-    sliceProblem();
-    useArrayFrom();
+    // comparePseudoArray();
+    // createArray();
+    // sliceProblem();
+    // useArrayFrom();
+    createPseudoArray(0, 1, [10,20,30,40,50]);
 })();
 
+//PseudoArray 코드?
+function createPseudoArray(...rest) {
+    const domList = createDomList(5);
+
+    console.dir(domList);
+    console.dir(arguments);
+};
+
 // array call 하는 방법에 대해서 고민해보자.
-function createArray(){
+function createArray() {
     // es5 version
     // init
     var arr1 = [];
@@ -79,17 +88,8 @@ function deepCopy(target) {
 };
 
 function comparePseudoArray() {
-    let i, len;
-    let el = document.createElement('div');
+    const list = createDomList(30);
 
-    for(i = 0, len = 10; i < len ; i++ ){
-        let childNode = document.createElement('div');
-        childNode.id = i;
-        el.appendChild(childNode);
-    }
-
-    const list = el.childNodes;
-    
     // 유사배열에 대해서, filtering을 한다고 했을 때, forEach를 쓰게 되므로, 성능이 느리다. 불필요한 클로저 남발
     let targetList = [];
 
@@ -112,8 +112,20 @@ function comparePseudoArray() {
     console.log(targetList2);        
 };
 
+function createDomList( domLength ){
+    let i, len;
+    let el = document.createElement('div');
+
+    for(i = 0, len = domLength; i < len ; i++ ){
+        let childNode = document.createElement('div');
+        childNode.id = i;
+        el.appendChild(childNode);
+    }
+
+    return el.childNodes;
+}
+
 function useArrayFrom() {
-    
     
     let arrayLike = {
         length : 6,
