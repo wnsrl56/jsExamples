@@ -167,5 +167,5 @@ function useArrayFrom() {
     
     console.log(arr3);
     console.log(arr4);
-
 }
+

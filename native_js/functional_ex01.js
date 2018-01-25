@@ -25,11 +25,3 @@ function filter(list, predicate) {
 
     return newList;
 }
-
-function split(m, count){
-    if(m == 1){
-        return count;
-    }
-    count++;
-    return split(--m, count);
-}
