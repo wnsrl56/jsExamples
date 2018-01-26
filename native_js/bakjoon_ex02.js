@@ -13,7 +13,7 @@ var maxValue = 0;
 var result = 0;
 var totalMap = [];
 
-for(ix = 0; ix < 1000; ix++){
+for(ix = 0; ix < 1000; ix++) {
     tempArray = [];
     tempArray.length = 1000;
     tempArray.fill(0);
@@ -21,7 +21,7 @@ for(ix = 0; ix < 1000; ix++){
 }
 
 for(ix = 1; ix <= mn[0]; ix ++) {
-    for(jx = 1; jx <= mn[1]; jx++) {
+    for(jx = 1; jx <= mn[1]; jx++) {        
        totalMap[ix][jx]  = r[ix-1][jx-1];
     }
 }
